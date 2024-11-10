@@ -1,0 +1,254 @@
+start_time      :	2024-11-10 12:54:25.521960
+end_time        :	2024-11-10 12:54:26.169231
+run_time        :	0.647271
+request_body    :	"{
+    ""id"": 2,
+    ""full_name"": ""Mohan"",
+    ""age"": 23,
+    ""qualification"": ""BE"",
+    ""current_salary"": ""30000.00"",
+    ""expected_salary"": ""50000.00"",
+    ""role"": ""Software Engineer""
+}"
+response_body   :	{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+request_method  :	PUT
+status_code     :	401
+request path    :	/api/resumes/2/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:07:48.653361
+end_time        :	2024-11-10 13:07:53.554262
+run_time        :	4.900901
+request_body    :	"{
+    ""username"": ""mohanbabu"",
+    ""password"": ""123456""   
+}
+"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMDY3MywiaWF0IjoxNzMxMjI0MjczLCJqdGkiOiJlODQ0ZjhkYzYzOTY0ZDYyOTU0Nzc0MzIyMDhiNzgzOSIsInVzZXJfaWQiOjF9.BsuuO2xmfPXcDAdrRlJwTDd_mkbzS_RFd9TWlVfg798', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI0NTczLCJpYXQiOjE3MzEyMjQyNzMsImp0aSI6IjlhMzBhNGRjZmIwOTQ0MDk4MjdiMzQ3YjYwNDViZjQ5IiwidXNlcl9pZCI6MX0.unEK13WdkBeM4L0ui2yjydYWj9lpwawGwlmsqaN10Gg'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:10:19.120229
+end_time        :	2024-11-10 13:10:23.928377
+run_time        :	4.808148
+request_body    :	"{
+    ""full_name"": ""Babu"",
+    ""age"": 24,
+    ""qualification"": ""BE"",
+    ""current_salary"": 10000.00,
+    ""expected_salary"": 20000.00,
+    ""role"": ""SoftwareEngineer""
+}
+"
+response_body   :	{'id': 3, 'full_name': 'Babu', 'age': 24, 'qualification': 'BE', 'current_salary': '10000.00', 'expected_salary': '20000.00', 'role': 'SoftwareEngineer'}
+request_method  :	POST
+status_code     :	201
+request path    :	/api/resumes/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:19:19.210383
+end_time        :	2024-11-10 13:19:22.862642
+run_time        :	3.652259
+request_body    :	"{
+    ""username"": ""mohanbabu"",
+    ""password"": ""123456""   
+}
+"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMTM2MiwiaWF0IjoxNzMxMjI0OTYyLCJqdGkiOiJmYTQzYWQwYWE0YTI0NTZhYjRlMmNlNGI2ZjlkMTZmYyIsInVzZXJfaWQiOjF9.k-XPHCkb3vYTUMD7X_f8B_QY0Ji7o1XkYslSz7_rmoA', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI1MjYyLCJpYXQiOjE3MzEyMjQ5NjIsImp0aSI6IjEzMzUyOGQyMTg5ODRkYjZhNjAxMGVhYjNmYmQ4Nzk0IiwidXNlcl9pZCI6MX0.stvr0nwvGzyFwwD_ImvQn5tId0cn3axzQcAXIjZEcS4'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:23:18.437391
+end_time        :	2024-11-10 13:23:19.591792
+run_time        :	1.154401
+request_body    :	
+response_body   :	
+request_method  :	DELETE
+status_code     :	204
+request path    :	/api/resumes/1/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:24:07.768457
+end_time        :	2024-11-10 13:24:08.583782
+run_time        :	0.815325
+request_body    :	
+response_body   :	{'detail': ErrorDetail(string='No Resume matches the given query.', code='not_found')}
+request_method  :	DELETE
+status_code     :	404
+request path    :	/api/resumes/1/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:25:29.207868
+end_time        :	2024-11-10 13:25:29.477301
+run_time        :	0.269433
+request_body    :	
+response_body   :	{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+request_method  :	DELETE
+status_code     :	401
+request path    :	/api/resumes/1/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:31:36.982428
+end_time        :	2024-11-10 13:31:38.845944
+run_time        :	1.863516
+request_body    :	"{
+    ""username"": ""mohanbabu"",
+    ""password"": ""123456""   
+}
+"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMjA5OCwiaWF0IjoxNzMxMjI1Njk4LCJqdGkiOiIyMGYyYzJlNzA0NDM0ZDI3ODQxNDk0ZmFiZjEwYmIzYyIsInVzZXJfaWQiOjF9.UWPntPwIQNuL-fIwfLkDZgn1G6YNM2g0ySxIcRgmPyQ', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI1OTk4LCJpYXQiOjE3MzEyMjU2OTgsImp0aSI6IjE1MWFjMDA2ZTExNjQ3OTE4NWQ4MmYyMmE5ZThmYzJjIiwidXNlcl9pZCI6MX0.FBSeZxQbqPbVmvlYjyQ2NdoCUsgnVQ0bcl9M14vBqiY'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:32:05.699924
+end_time        :	2024-11-10 13:32:06.728399
+run_time        :	1.028475
+request_body    :	
+response_body   :	
+request_method  :	DELETE
+status_code     :	204
+request path    :	/api/resumes/3/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:04.679938
+end_time        :	2024-11-10 13:46:06.139255
+run_time        :	1.459317
+request_body    :	"{""username"":""mohanbabu"",""password"":""123456""}"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMjk2NSwiaWF0IjoxNzMxMjI2NTY1LCJqdGkiOiJlNGY4MDI1YTQ5ZWI0Zjk5ODQ1NDAzY2U0MmE1ZjFjZiIsInVzZXJfaWQiOjF9.t4LYrGjxPWOCmckKEXYzmixwROtaeAkpjyeFaPAQoeI', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI2ODY1LCJpYXQiOjE3MzEyMjY1NjUsImp0aSI6ImRmYTRhNjBmNGZmYzQ3NmZiYzYwODUxOTcxMGY2ZWE0IiwidXNlcl9pZCI6MX0.eeLvpsrwHD40AD5BNOoInv-RCwSyBAQbEmVtMPJ9y-o'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:06.528341
+end_time        :	2024-11-10 13:46:06.579236
+run_time        :	0.050895
+request_body    :	"{""full_name"":""Mohan"",""age"":23,""qualification"":""BE"",""current_salary"":30000.0,""expected_salary"":50000.0,""role"":""SE""}"
+response_body   :	{'id': 1, 'full_name': 'Mohan', 'age': 23, 'qualification': 'BE', 'current_salary': '30000.00', 'expected_salary': '50000.00', 'role': 'SE'}
+request_method  :	POST
+status_code     :	201
+request path    :	/api/resumes/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:07.689543
+end_time        :	2024-11-10 13:46:08.622007
+run_time        :	0.932464
+request_body    :	"{""username"":""mohanbabu"",""password"":""123456""}"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMjk2OCwiaWF0IjoxNzMxMjI2NTY4LCJqdGkiOiJmOGQxZDVmMTg3NGU0ODVlOGNjNmVhNmMzYWIyYmJmMCIsInVzZXJfaWQiOjJ9.w68vPqxBtrOanOETsjhHeBxhWNSzZE97MmkTv71lmPk', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI2ODY4LCJpYXQiOjE3MzEyMjY1NjgsImp0aSI6ImI3OThmNTY1ODYzYTQwNjRhMTk1ZTUyMjY4Y2JhOTc2IiwidXNlcl9pZCI6Mn0.6-6Cnm93LIIKHfH6Sj7SiI-UgNzW-B5DzU4cKfwnYR4'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:08.631034
+end_time        :	2024-11-10 13:46:08.635969
+run_time        :	0.004935
+request_body    :	
+response_body   :	
+request_method  :	DELETE
+status_code     :	204
+request path    :	/api/resumes/2/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:09.549527
+end_time        :	2024-11-10 13:46:10.465130
+run_time        :	0.915603
+request_body    :	"{""username"":""mohanbabu"",""password"":""123456""}"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMjk3MCwiaWF0IjoxNzMxMjI2NTcwLCJqdGkiOiI0YzFlMmUxYjIxOWU0MDdjODRlODhmMjdkMmMxMTRiMCIsInVzZXJfaWQiOjN9.-gynaP3P2VeL6QtXXlcd2cnKdzBw5UzbV7LlLdqKZxo', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI2ODcwLCJpYXQiOjE3MzEyMjY1NzAsImp0aSI6ImY4NDI3ZWM1OWRiYjRkNTk5MjY2ODY3MzIxNGNiNWZiIiwidXNlcl9pZCI6M30.SrbKjJG_zgIqGTde5IcPr1UDqUs9DxG0YyhqN9xXbvw'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:10.468077
+end_time        :	2024-11-10 13:46:10.472110
+run_time        :	0.004033
+request_body    :	
+response_body   :	{'id': 3, 'full_name': 'Mohan', 'age': 23, 'qualification': 'BE', 'current_salary': '30000.00', 'expected_salary': '50000.00', 'role': 'SE'}
+request_method  :	GET
+status_code     :	200
+request path    :	/api/resumes/3/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:11.555168
+end_time        :	2024-11-10 13:46:12.592394
+run_time        :	1.037226
+request_body    :	"{""username"":""mohanbabu"",""password"":""123456""}"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxMjk3MiwiaWF0IjoxNzMxMjI2NTcyLCJqdGkiOiI4ZjA5ZTBmOWYxYWU0ZTNhYWM4Y2E4NGMyN2JkNjZjOSIsInVzZXJfaWQiOjR9.gbskcw659ww00y6_fZv6lZxnd3lCT0BtSVRejbErZ-I', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI2ODcyLCJpYXQiOjE3MzEyMjY1NzIsImp0aSI6Ijk0MmUwYjAyMzJjYzRlMmVhYmNjMTc1MWEzYmFiZjEyIiwidXNlcl9pZCI6NH0.flgvg5z29eP9ndinZyU3H_f07Uiebq0lTbrJvMhldNc'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 13:46:12.595389
+end_time        :	2024-11-10 13:46:12.646257
+run_time        :	0.050868
+request_body    :	"{""full_name"":""Mohan"",""age"":23,""qualification"":""BE"",""current_salary"":30000.0,""expected_salary"":50000.0,""role"":""Software Engineer""}"
+response_body   :	{'id': 4, 'full_name': 'Mohan', 'age': 23, 'qualification': 'BE', 'current_salary': '30000.00', 'expected_salary': '50000.00', 'role': 'Software Engineer'}
+request_method  :	PUT
+status_code     :	200
+request path    :	/api/resumes/4/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 14:08:26.434289
+end_time        :	2024-11-10 14:08:26.923528
+run_time        :	0.489239
+request_body    :	
+response_body   :	{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+request_method  :	GET
+status_code     :	401
+request path    :	/api/resumes/2/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 14:21:49.740764
+end_time        :	2024-11-10 14:21:52.382157
+run_time        :	2.641393
+request_body    :	"{
+    ""username"": ""mohanbabu"",
+    ""password"": ""123456""   
+}
+"
+response_body   :	{'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTMxNTExMiwiaWF0IjoxNzMxMjI4NzEyLCJqdGkiOiIxNzI1NTJjNDdiMDk0NWU4YTQzZTQyZTk0NDJlNjdlZCIsInVzZXJfaWQiOjF9.uO-QbnyUCHqESanFWxfhY7hGNy0kGujxxm68ONvaqL8', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMjI5MDEyLCJpYXQiOjE3MzEyMjg3MTIsImp0aSI6ImE0NWUwZmJjYjUzZTQ3ZDNhMTMyOTExODM4MjQ0NzM1IiwidXNlcl9pZCI6MX0.n31V4B6Mf6dCPSKP2FyWnTn_tn0hU4yD4TB-2pyihEc'}
+request_method  :	POST
+status_code     :	200
+request path    :	/api/token/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 14:22:31.165103
+end_time        :	2024-11-10 14:22:32.279449
+run_time        :	1.114346
+request_body    :	"{
+    ""full_name"": ""Raghul"",
+    ""age"": 24,
+    ""qualification"": ""BE"",
+    ""current_salary"": 10000.00,
+    ""expected_salary"": 20000.00,
+    ""role"": ""SoftwareEngineer""
+}
+"
+response_body   :	{'id': 4, 'full_name': 'Raghul', 'age': 24, 'qualification': 'BE', 'current_salary': '10000.00', 'expected_salary': '20000.00', 'role': 'SoftwareEngineer'}
+request_method  :	POST
+status_code     :	201
+request path    :	/api/resumes/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 14:23:08.484941
+end_time        :	2024-11-10 14:23:08.486736
+run_time        :	0.001795
+request_body    :	"{
+    ""full_name"": ""Raghul"",
+    ""age"": 24,
+    ""qualification"": ""BE"",
+    ""current_salary"": 10000.00,
+    ""expected_salary"": 20000.00,
+    ""role"": ""SoftwareEngineer""
+}
+"
+response_body   :	{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+request_method  :	DELETE
+status_code     :	401
+request path    :	/api/resumes/4/
+-----------------------------------------------	-----------------------------------------------------
+start_time      :	2024-11-10 14:23:49.370884
+end_time        :	2024-11-10 14:23:50.137228
+run_time        :	0.766344
+request_body    :	"{
+    ""full_name"": ""Raghul"",
+    ""age"": 24,
+    ""qualification"": ""BE"",
+    ""current_salary"": 10000.00,
+    ""expected_salary"": 20000.00,
+    ""role"": ""SoftwareEngineer""
+}
+"
+response_body   :	
+request_method  :	DELETE
+status_code     :	204
+request path    :	/api/resumes/4/
+-----------------------------------------------	-----------------------------------------------------

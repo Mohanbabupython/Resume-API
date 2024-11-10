@@ -1,0 +1,67 @@
+POST http://127.0.0.1:8000/api/token/ 
+
+BODY RAW JSON {
+    "username": "mohanbabu",
+    "password": "123456"   
+}
+
+response {"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMTI1MjgyNiwiaWF0IjoxNzMxMTY2NDI2LCJqdGkiOiI4YTNjMTdiZGViMTk0Y2NkOTMzMWM1MWQwMDE3M2E4MiIsInVzZXJfaWQiOjF9.NT2LmuIX1LlxgZnSXltXtVRUUriEZSOqeC-8FwQUYlc","access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMTY2NzI2LCJpYXQiOjE3MzExNjY0MjYsImp0aSI6IjRkMTMxZGNhNjFlNzQzMzg5Y2I0ZmMwMWQ0YzcxMmE2IiwidXNlcl9pZCI6MX0.YI9MWbw2OP7luMbsr_GQw6W446AohY18UGWVFEI3jPo"}
+
+POST http://127.0.0.1:8000/api/resumes/
+
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMTcyMTk1LCJpYXQiOjE3MzExNzE4OTUsImp0aSI6ImZjZWViZTRjMDBhNzQ2YTFiMDc5MmY2OTUxYWMzZGU1IiwidXNlcl9pZCI6MX0.ICl1RJ16WYhamOsfUr4vlGDN1feMTLit5FqbDHRtNPU>
+
+BODY RAW JSON {
+    "full_name": "Mohan",
+    "age": 23,
+    "qualification": "BE",
+    "current_salary": 30000.00,
+    "expected_salary": 50000.00,
+    "role": "SE"
+}
+
+response {
+    "id": 2,
+    "full_name": "Mohan",
+    "age": 23,
+    "qualification": "BE",
+    "current_salary": "30000.00",
+    "expected_salary": "50000.00",
+    "role": "SE"
+}
+
+GET http://127.0.0.1:8000/api/resumes/2/
+
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMTcyMTk1LCJpYXQiOjE3MzExNzE4OTUsImp0aSI6ImZjZWViZTRjMDBhNzQ2YTFiMDc5MmY2OTUxYWMzZGU1IiwidXNlcl9pZCI6MX0.ICl1RJ16WYhamOsfUr4vlGDN1feMTLit5FqbDHRtNPU>
+
+response {
+    "id": 2,
+    "full_name": "Mohan",
+    "age": 23,
+    "qualification": "BE",
+    "current_salary": "30000.00",
+    "expected_salary": "50000.00",
+    "role": "SE"
+}
+
+PUT http://127.0.0.1:8000/api/resumes/2/
+
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMTcyMTk1LCJpYXQiOjE3MzExNzE4OTUsImp0aSI6ImZjZWViZTRjMDBhNzQ2YTFiMDc5MmY2OTUxYWMzZGU1IiwidXNlcl9pZCI6MX0.ICl1RJ16WYhamOsfUr4vlGDN1feMTLit5FqbDHRtNPU>
+
+BODY RAW JSON {
+    "id": 2,
+    "full_name": "Mohan",
+    "age": 23,
+    "qualification": "BE",
+    "current_salary": "30000.00",
+    "expected_salary": "50000.00",
+    "role": "Software Engineer"
+}
+
+response {"id":2,"full_name":"Mohan","age":23,"qualification":"BE","current_salary":"30000.00","expected_salary":"50000.00","role":"Software Engineer"}
+
+DELETE http://127.0.0.1:8000/api/resumes/1/
+
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxMTcyMTk1LCJpYXQiOjE3MzExNzE4OTUsImp0aSI6ImZjZWViZTRjMDBhNzQ2YTFiMDc5MmY2OTUxYWMzZGU1IiwidXNlcl9pZCI6MX0.ICl1RJ16WYhamOsfUr4vlGDN1feMTLit5FqbDHRtNPU>
+
+response {""}
